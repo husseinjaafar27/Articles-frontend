@@ -9,9 +9,7 @@ const AppWrapper = ({ children }) => {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <BrowserRouter basename="https://articles-frontend-n87r.onrender.com/">
-          {children}
-        </BrowserRouter>
+        <BrowserRouter basename="/">{children}</BrowserRouter>
         <ToastContainer />
       </AuthProvider>
     </QueryClientProvider>
