@@ -9,7 +9,7 @@ const AppWrapper = ({ children }) => {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <BrowserRouter basename="/">{children}</BrowserRouter>
+        <BrowserRouter basename="/api">{children}</BrowserRouter>
         <ToastContainer />
       </AuthProvider>
     </QueryClientProvider>
